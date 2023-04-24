@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Document</title>
+<style type="text/css">
+
+body{
+background: blue; /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6298df, #0a164d); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2802ff, purple); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+.div1{
+    text-align: center;
+    font-style: Arial;
+    border-style: solid;
+    width: 280px;
+    text-align: center;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+</style>
+
+<script type="text/javascript"> 
+
+function funcaoteste()
+
+{
+    var a = document.getElementById ('teste').value;
+    var b = document.getElementById ('teste2').value;
+
+
+if (a == 'isabelly' & b == 12345)
+
+{
+ alert ('sucesso');   
+}
+
+else
+{
+    alert ('falha');
+}
+
+return false;
+}
+ 
+
+</script>
+<body>
+
+
+<div class="div1">
+    <div>
+        <h1>LOGIN</h1>
+    </div>
+
+
+
+    <div>
+        Usuario:
+    
+    <form>
+        <input type="text" name="usuario" id="teste"> 
+    </form>
+
+    <div>
+        Senha:
+    </div>
+
+    <form>
+        <input type="password" name="senha" id="teste2">
+    </form>
+<br>
+    <form>
+         
+        <button onclick="funcaoteste()">Entrar</button>
+
+    </form>
+    <br>
+
+
+</body>
+</html>
